@@ -1,0 +1,78 @@
+/* Style général du corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligne en haut */
+    min-height: 100vh;
+    padding-top: 50px; /* Ajoute de l'espace en haut */
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Titre principal */
+h1 {
+    color: #1a2b4d; /* Un bleu foncé */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* Conteneur pour les cartes */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espace entre les cartes */
+}
+
+/* Style de chaque carte */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 25px;
+    width: 220px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Effet de lévitation */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); /* Ombre plus prononcée */
+}
+
+/* Titre de la carte (nom de l'équipe) */
+.card h2 {
+    font-size: 1.3em;
+    color: #0056b3; /* Bleu */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Paragraphe de la carte (palmarès) */
+.card p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #888;
+    font-size: 0.9em;
+}
